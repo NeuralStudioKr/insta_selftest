@@ -1,0 +1,149 @@
+.commentCard {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.commentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.username {
+  font-weight: 600;
+  color: #262626;
+}
+
+.likeCount {
+  font-size: 14px;
+  color: #8e8e8e;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.commentText {
+  color: #262626;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.replies {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #efefef;
+}
+
+.reply {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  padding-left: 16px;
+}
+
+.replyUsername {
+  font-weight: 600;
+  color: #262626;
+  font-size: 14px;
+}
+
+.replyText {
+  color: #262626;
+  font-size: 14px;
+}
+
+.replyButton {
+  background: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.replyButton:hover {
+  background: #0084d9;
+}
+
+.replyForm {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #efefef;
+}
+
+.replyTextarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+  margin-bottom: 8px;
+}
+
+.replyTextarea:focus {
+  outline: none;
+  border-color: #0095f6;
+}
+
+.replyActions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.cancelButton,
+.submitButton {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.cancelButton {
+  background: #efefef;
+  color: #262626;
+}
+
+.cancelButton:hover {
+  background: #dbdbdb;
+}
+
+.submitButton {
+  background: #0095f6;
+  color: white;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: #0084d9;
+}
+
+.submitButton:disabled {
+  background: #b2dffc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #ed4956;
+  font-size: 12px;
+  margin-bottom: 8px;
+}

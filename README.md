@@ -309,10 +309,29 @@ NEXT_PUBLIC_API_URL=http://localhost:8000
 
 ## Railway 배포
 
+### 0. 사전 준비: GitHub 조직 권한
+
+**중요**: 조직(NeuralStudioKr) 저장소를 Railway에 연결하려면 조직 관리자 권한이 필요합니다.
+
+#### 조직 관리자에게 요청할 내용:
+1. Railway GitHub 앱 설치 요청
+2. NeuralStudioKr 조직에 Railway 앱 접근 권한 부여
+
+#### 관리자가 해야 할 작업:
+1. [Railway](https://railway.app/) 접속
+2. Settings → GitHub 연결
+3. 조직(NeuralStudioKr) 선택
+4. "Install Railway App" 클릭하여 조직 권한 승인
+
+#### 오류 메시지가 나오는 경우:
+- "You do not have permissions to install the Railway GitHub app"
+- → 조직 관리자에게 Railway GitHub 앱 설치 요청 필요
+
 ### 1. Railway 계정 설정
 
 1. [Railway](https://railway.app/)에 가입 및 로그인
 2. GitHub 저장소와 연동 (Settings → Connect GitHub)
+   - **주의**: 조직 저장소의 경우 관리자가 먼저 Railway GitHub 앱을 설치해야 함
 
 ### 2. 백엔드 배포
 
